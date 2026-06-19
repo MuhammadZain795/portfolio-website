@@ -134,6 +134,50 @@ a:hover { color: var(--ink); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line-2); }
 .btn-ghost:hover { background: var(--bg-alt); color: var(--ink); }
 
+/* HERO METRIC STRIP */
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 56px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+  max-width: 720px;
+}
+.metric-block {
+  display: flex; flex-direction: column; gap: 8px;
+}
+.metric-num {
+  font-size: clamp(34px, 4vw, 44px);
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-feature-settings: "tnum";
+}
+.metric-num span {
+  color: var(--accent-2);
+  font-size: 0.62em;
+  vertical-align: top;
+  margin-left: 1px;
+  font-weight: 700;
+}
+.metric-label {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+@media (max-width: 720px) {
+  .hero-metrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+    padding-top: 28px;
+  }
+}
+
 /* TRUST */
 .trust {
   padding: 32px 0 8px;
