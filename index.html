@@ -3,513 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>M Zain — Backend Engineer | FinTech & ZATCA E-Invoicing Specialist</title>
-  <meta name="description" content="Senior backend engineer specializing in FinTech, digital banking, and ZATCA-compliant e-invoicing. 6 years building scalable Java/Spring Boot systems for global clients." />
-  <meta name="author" content="Muhammad Zain Ul Abdin" />
-  <meta name="keywords" content="ZATCA developer, ZATCA e-invoicing, FinTech backend engineer, Java Spring Boot consultant, Saudi Arabia e-invoicing, ERP integration, backend consultant" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="M Zain — Backend Engineer | FinTech & ZATCA E-Invoicing" />
-  <meta property="og:description" content="6 years building secure, compliant backend systems for FinTech, digital banking, and ZATCA-compliant e-invoicing." />
-  <meta property="og:url" content="https://itsmzain.com" />
-  <meta property="og:image" content="https://itsmzain.com/og-image.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
+  <title>M Zain — Back Online Shortly</title>
+  <meta name="description" content="Backend engineer for FinTech and ZATCA-compliant systems. Site is being polished — back online shortly." />
+  <meta name="robots" content="noindex, nofollow" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --ink: #0a1628;
+      --muted: #475569;
+      --soft: #94a3b8;
+      --accent: #10b981;
+      --accent-2: #059669;
+      --accent-soft: #ecfdf5;
+      --line: #e2e8f0;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(800px 320px at 80% 10%, rgba(16, 185, 129, 0.10), transparent 60%),
+        radial-gradient(700px 280px at 10% 90%, rgba(10, 22, 40, 0.04), transparent 60%),
+        var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: relative;
+      overflow: hidden;
+    }
+    body::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(to right, rgba(10, 22, 40, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(10, 22, 40, 0.04) 1px, transparent 1px);
+      background-size: 56px 56px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+      opacity: .5;
+      z-index: 0;
+    }
+    .wrap {
+      max-width: 560px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .brand-mark {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 52px; height: 52px; border-radius: 12px;
+      background: var(--ink); color: var(--accent);
+      font-weight: 800; font-size: 18px; letter-spacing: 0.5px;
+      margin-bottom: 32px;
+      box-shadow: 0 8px 24px rgba(10, 22, 40, 0.08);
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 7px 14px; border-radius: 999px;
+      background: var(--accent-soft); color: var(--accent-2);
+      font-size: 13px; font-weight: 600; letter-spacing: 0.1px;
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      margin-bottom: 28px;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+      animation: pulse 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2); }
+      50%      { box-shadow: 0 0 0 7px rgba(16, 185, 129, 0.08); }
+    }
+    h1 {
+      font-size: clamp(34px, 5.5vw, 48px);
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      margin: 0 0 18px;
+      font-weight: 800;
+    }
+    .accent { color: var(--accent-2); }
+    p {
+      font-size: 17px;
+      color: var(--muted);
+      margin: 0 auto;
+      line-height: 1.6;
+      max-width: 46ch;
+    }
+    .meta {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+      color: var(--soft);
+      letter-spacing: 0.02em;
+    }
+    .meta a {
+      color: var(--accent-2);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .meta a:hover { color: var(--ink); }
+    .role {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--soft);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+  </style>
 </head>
 <body>
+  <main class="wrap">
+    <div class="brand-mark">MZ</div>
 
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#top" class="brand" aria-label="M Zain — Home">
-        <span class="brand-mark">MZ</span>
-        <span class="brand-name">M Zain</span>
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav-links" id="nav-links">
-        <a href="#services">Services</a>
-        <a href="#case-studies">Case Studies</a>
-        <a href="#stack">Stack</a>
-        <a href="#about">About</a>
-        <a href="#contact" class="nav-cta">Book a Call</a>
-      </nav>
+    <div class="eyebrow">
+      <span class="dot"></span> Building something better
     </div>
-  </header>
 
-  <main id="top">
+    <p class="role">Muhammad Zain Ul Abdin</p>
+    <h1>The site's getting <span class="accent">a polish</span>.<br/>Back online shortly.</h1>
+    <p>Backend engineer for FinTech, banking, and ZATCA-compliant systems. Currently iterating on a sharper version of this page.</p>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="eyebrow">
-          <span class="dot"></span> Available for select consulting engagements
-        </div>
-        <h1>
-          I build the <span class="accent">backends</span> banks bet their reputations on.
-        </h1>
-        <p class="lede">
-          6 years shipping Java &amp; Spring Boot for digital banking, payment systems,
-          and <strong>ZATCA-compliant e-invoicing</strong>. Production code serving
-          <strong>8M+ customers</strong>. 100% regulatory compliance on every release.
-        </p>
-        <div class="cta-row">
-          <a href="#contact" class="btn btn-primary">Book a Free 20-Min Call</a>
-          <a href="#case-studies" class="btn btn-ghost">View Case Studies →</a>
-        </div>
-
-        <div class="hero-metrics">
-          <div class="metric-block">
-            <div class="metric-num">6<span>+</span></div>
-            <div class="metric-label">Years building<br/>FinTech backends</div>
-          </div>
-          <div class="metric-block">
-            <div class="metric-num">8M<span>+</span></div>
-            <div class="metric-label">End customers<br/>served in production</div>
-          </div>
-          <div class="metric-block">
-            <div class="metric-num">100<span>%</span></div>
-            <div class="metric-label">ZATCA compliance<br/>across releases</div>
-          </div>
-          <div class="metric-block">
-            <div class="metric-num">5</div>
-            <div class="metric-label">Production FinTech<br/>systems shipped</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRUST STRIP -->
-    <section class="trust">
-      <div class="container">
-        <p class="trust-label">Trusted on projects for</p>
-        <div class="logo-strip">
-          <span class="logo-pill">BILL</span>
-          <span class="logo-pill">UOB Malaysia</span>
-          <span class="logo-pill">i2c Inc.</span>
-          <span class="logo-pill">Algoras</span>
-          <span class="logo-pill">Purchase Panda</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">What I do</span>
-          <h2>Three things I do better than most.</h2>
-          <p class="section-sub">
-            I focus deliberately. If your problem is one of these, you're in the right place.
-          </p>
-        </div>
-
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            </div>
-            <h3>ZATCA E-Invoicing Integration</h3>
-            <p>
-              Saudi Arabia Phase 1 &amp; Phase 2 compliance. XML signing, PDF/A-3 generation,
-              QR codes, ERP integration. End-to-end implementation or a focused readiness audit.
-            </p>
-            <ul class="card-list">
-              <li>FBR / ZATCA-compliant XML generation</li>
-              <li>Cryptographic signing &amp; UUID handling</li>
-              <li>ERP &amp; accounting system bridging</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
-            </div>
-            <h3>FinTech &amp; Banking Backend</h3>
-            <p>
-              Spring Boot APIs for digital banking, payment processing, high-throughput
-              financial calculators, regulatory compliance, and secure third-party integration.
-            </p>
-            <ul class="card-list">
-              <li>Java 8 / 11 / 17, Spring Boot, Micronaut</li>
-              <li>Multithreaded, low-latency processing</li>
-              <li>Audit logging, RBAC, secure APIs</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3>ERP Modernization &amp; Integration</h3>
-            <p>
-              Sales &amp; Purchase module enhancement, invoice automation, approval workflows,
-              reconciliation, and bridging legacy ERPs with modern compliance pipelines.
-            </p>
-            <ul class="card-list">
-              <li>Workflow automation &amp; reconciliation</li>
-              <li>E-invoicing ↔ ERP integration</li>
-              <li>Performance optimisation (25%+ gains)</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CASE STUDIES -->
-    <section class="section section-alt" id="case-studies">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Selected work</span>
-          <h2>Case studies.</h2>
-          <p class="section-sub">
-            Real systems, in production, with numbers attached. Client names anonymized where NDAs apply.
-          </p>
-        </div>
-
-        <div class="case-grid">
-
-          <article class="case">
-            <div class="case-meta">
-              <span class="tag">ZATCA · FinTech · KSA</span>
-              <span class="year">2023 — 2025</span>
-            </div>
-            <h3>100% ZATCA Compliance for a Saudi Enterprise</h3>
-            <p class="case-problem">
-              <strong>Problem:</strong> An ERP needed to issue every invoice through ZATCA's Phase 2
-              integration in real time — with XML signing, hash chaining, and PDF/A-3 generation —
-              without breaking existing Sales &amp; Purchase workflows.
-            </p>
-            <p class="case-solution">
-              <strong>Solution:</strong> Designed and shipped an E-Invoicing service in Java 11 + Spring
-              Boot. Optimised XML and Base64 encode/decode paths, built an invoice tracking portal,
-              and wired every ERP transaction through a validation layer.
-            </p>
-            <div class="case-outcomes">
-              <div class="metric"><span class="metric-num">100%</span><span class="metric-label">ZATCA compliance</span></div>
-              <div class="metric"><span class="metric-num">25%</span><span class="metric-label">ERP efficiency gain</span></div>
-              <div class="metric"><span class="metric-num">0</span><span class="metric-label">Regulatory rejections</span></div>
-            </div>
-            <div class="stack-row">
-              <span>Java 11</span><span>Spring Boot</span><span>XML / Base64</span><span>PostgreSQL</span>
-            </div>
-          </article>
-
-          <article class="case">
-            <div class="case-meta">
-              <span class="tag">Digital Banking · SEA</span>
-              <span class="year">2025</span>
-            </div>
-            <h3>Banking Backend Serving 8M+ Retail Customers</h3>
-            <p class="case-problem">
-              <strong>Problem:</strong> A leading Southeast Asian bank needed backend features added
-              to a Personal Internet Banking platform handling 8M+ users — without degrading
-              performance or breaking regulatory compliance.
-            </p>
-            <p class="case-solution">
-              <strong>Solution:</strong> Delivered features in Java 11 + Spring MVC, integrated secure
-              API endpoints with external services, and shipped performance improvements alongside
-              admin-side audit logging and RBAC for compliance teams.
-            </p>
-            <div class="case-outcomes">
-              <div class="metric"><span class="metric-num">8M+</span><span class="metric-label">End customers served</span></div>
-              <div class="metric"><span class="metric-num">100%</span><span class="metric-label">Compliance preserved</span></div>
-              <div class="metric"><span class="metric-num">0</span><span class="metric-label">Production incidents</span></div>
-            </div>
-            <div class="stack-row">
-              <span>Java 11</span><span>Spring MVC</span><span>Secure APIs</span><span>RBAC</span>
-            </div>
-          </article>
-
-          <article class="case">
-            <div class="case-meta">
-              <span class="tag">Payments · Performance</span>
-              <span class="year">2021 — 2023</span>
-            </div>
-            <h3>Multithreaded Earned Interest Calculator</h3>
-            <p class="case-problem">
-              <strong>Problem:</strong> A payments institution was running interest calculations and
-              tax reporting manually — slow, error-prone, and a regulatory risk.
-            </p>
-            <p class="case-solution">
-              <strong>Solution:</strong> Built a multithreaded service in Java 8 using async +
-              parallel execution. Automated computations and tax report generation end-to-end.
-            </p>
-            <div class="case-outcomes">
-              <div class="metric"><span class="metric-num">−30%</span><span class="metric-label">Manual effort</span></div>
-              <div class="metric"><span class="metric-num">Async</span><span class="metric-label">Parallel processing</span></div>
-              <div class="metric"><span class="metric-num">100%</span><span class="metric-label">Regulatory compliance</span></div>
-            </div>
-            <div class="stack-row">
-              <span>Java 8</span><span>Multithreading</span><span>Async processing</span>
-            </div>
-          </article>
-
-          <article class="case">
-            <div class="case-meta">
-              <span class="tag">E-Commerce · Full Backend</span>
-              <span class="year">2020 — 2021</span>
-            </div>
-            <h3>Supplier Hub: Full Backend Ownership</h3>
-            <p class="case-problem">
-              <strong>Problem:</strong> An e-commerce platform needed a complete supplier-side
-              backend — onboarding, product management, RBAC, and compliance validation — built
-              from scratch.
-            </p>
-            <p class="case-solution">
-              <strong>Solution:</strong> Implemented the full backend in Java + Kotlin + Spring Boot.
-              Bulk Excel product import, external crawler integration for data enrichment, settings
-              management, and a compliance validation module for market eligibility.
-            </p>
-            <div class="case-outcomes">
-              <div class="metric"><span class="metric-num">1</span><span class="metric-label">Engineer, full module</span></div>
-              <div class="metric"><span class="metric-num">RBAC</span><span class="metric-label">Admins + Suppliers</span></div>
-              <div class="metric"><span class="metric-num">Bulk</span><span class="metric-label">Excel import + crawl</span></div>
-            </div>
-            <div class="stack-row">
-              <span>Java</span><span>Kotlin</span><span>Spring Boot</span><span>Compliance Rules</span>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- TECH STACK -->
-    <section class="section" id="stack">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Stack</span>
-          <h2>What I build with.</h2>
-          <p class="section-sub">Production-grade. Battle-tested. Boring in the best way.</p>
-        </div>
-
-        <div class="stack-grid">
-          <div class="stack-col">
-            <h4>Languages &amp; Frameworks</h4>
-            <ul>
-              <li>Java 8 / 11 / 17</li>
-              <li>Kotlin</li>
-              <li>Spring Boot, Spring MVC</li>
-              <li>Micronaut</li>
-              <li>Hibernate / JPA</li>
-            </ul>
-          </div>
-          <div class="stack-col">
-            <h4>Databases</h4>
-            <ul>
-              <li>PostgreSQL</li>
-              <li>MariaDB</li>
-              <li>Informix</li>
-              <li>DynamoDB</li>
-              <li>Elasticsearch</li>
-            </ul>
-          </div>
-          <div class="stack-col">
-            <h4>Infra &amp; Messaging</h4>
-            <ul>
-              <li>AWS</li>
-              <li>Docker, Kubernetes</li>
-              <li>Kafka, JMS</li>
-              <li>Jenkins (CI/CD)</li>
-              <li>Gradle, Maven</li>
-            </ul>
-          </div>
-          <div class="stack-col">
-            <h4>Architecture</h4>
-            <ul>
-              <li>Microservices</li>
-              <li>Event-Driven Systems</li>
-              <li>REST APIs</li>
-              <li>Multithreading</li>
-              <li>Design Patterns</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section section-alt" id="about">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">About</span>
-          <h2>I solve backend problems where being wrong costs money.</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-photo">
-            <img src="profile.jpg" alt="Muhammad Zain Ul Abdin" loading="lazy" width="240" height="240" />
-            <div class="about-badge">
-              <span class="dot"></span> Open for new engagements · GMT+5
-            </div>
-          </div>
-
-          <div class="about-body">
-            <p>
-              I'm <strong>Muhammad Zain Ul Abdin</strong>, a software engineer with 6 years
-              building backend systems where correctness is non-negotiable — banking
-              platforms, payment calculators, ZATCA-compliant e-invoicing, and ERP
-              integrations.
-            </p>
-            <p>
-              I've shipped for <strong>BILL</strong>, <strong>UOB Malaysia</strong>,
-              <strong>i2c Inc.</strong>, <strong>Algoras</strong>, and <strong>Purchase Panda</strong>.
-              Domains where a small bug is a regulator's email, an overdraft, or a missed
-              month-end close — so I write defensively, test seriously, and treat compliance
-              as a product requirement, not an afterthought.
-            </p>
-            <p>
-              I take on a small number of focused engagements at a time — ZATCA integrations,
-              FinTech backend builds, and ERP modernization. If your problem is one of those,
-              <a href="#contact">let's talk</a>.
-            </p>
-            <p class="about-edu">
-              BS Software Engineering, University of the Punjab.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-head center">
-          <span class="kicker">Contact</span>
-          <h2>Have a backend problem worth solving?</h2>
-          <p class="section-sub">
-            Book a free 20-minute discovery call. I'll listen, ask hard questions, and
-            tell you straight whether I'm the right person.
-          </p>
-        </div>
-
-        <div class="contact-grid">
-
-          <a class="contact-card" href="https://calendly.com/muhammadzainulabdin" target="_blank" rel="noopener">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <h3>Book a Call</h3>
-            <p>20 minutes, no pitch. Just diagnosis.</p>
-            <span class="contact-link">Open Calendly →</span>
-          </a>
-
-          <a class="contact-card" href="mailto:muhammadzainulabdin123@gmail.com">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <h3>Email</h3>
-            <p>For longer briefs and RFPs.</p>
-            <span class="contact-link">muhammadzainulabdin123@gmail.com</span>
-          </a>
-
-          <a class="contact-card" href="https://www.linkedin.com/in/muhammadzain795/" target="_blank" rel="noopener">
-            <div class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
-            </div>
-            <h3>LinkedIn</h3>
-            <p>Network &amp; references.</p>
-            <span class="contact-link">Connect →</span>
-          </a>
-
-        </div>
-
-        <form class="contact-form" action="https://formspree.io/f/YOUR-FORMSPREE-ID" method="POST">
-          <div class="form-row">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" required />
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" required />
-            </label>
-          </div>
-          <div class="form-row">
-            <label>
-              <span>Company</span>
-              <input type="text" name="company" />
-            </label>
-            <label>
-              <span>Project type</span>
-              <select name="project_type">
-                <option>ZATCA E-Invoicing</option>
-                <option>FinTech / Banking Backend</option>
-                <option>ERP Integration</option>
-                <option>Other</option>
-              </select>
-            </label>
-          </div>
-          <label class="full">
-            <span>Tell me about your problem</span>
-            <textarea name="message" rows="5" required></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-note">I reply within 24 hours, Mon–Fri (GMT+5).</p>
-        </form>
-      </div>
-    </section>
-
+    <div class="meta">
+      Urgent inquiries: <a href="mailto:muhammadzainulabdin123@gmail.com">muhammadzainulabdin123@gmail.com</a>
+    </div>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <span class="brand-mark">MZ</span>
-        <div>
-          <p class="footer-name">Muhammad Zain Ul Abdin</p>
-          <p class="footer-tag">Backend Engineering · FinTech · ZATCA E-Invoicing</p>
-        </div>
-      </div>
-      <nav class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#case-studies">Case Studies</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer-meta">
-        <p>© <span id="year">2026</span> Muhammad Zain Ul Abdin. All rights reserved.</p>
-        <p class="footer-availability"><span class="dot"></span> Available for select consulting engagements</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // mobile nav
-    const toggle = document.querySelector('.nav-toggle');
-    const links = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      const open = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(open));
-    });
-    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      links.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }));
-
-    // sticky nav shadow
-    const nav = document.getElementById('nav');
-    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-
-    // fade-in on scroll
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.section, .card, .case, .contact-card').forEach(el => {
-      el.classList.add('reveal'); io.observe(el);
-    });
-  </script>
-
 </body>
 </html>
